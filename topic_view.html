@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+     <meta charset="UTF-8">
+
+     <title>Discuss topic</title>
+
+     <!-- font format -->
+
+
+
+
+
+     <!-- CSS -->
+
+     <link href="css/bootstrap.min.css" rel="stylesheet">
+
+     <link rel="stylesheet" href="css/font-awesome.min.css" />
+
+	 <link href="css/topic_list.css" rel="stylesheet" >
+
+
+
+    <link href="css/style.css" rel="stylesheet" media="screen">
+
+	<script type="text/javascript" src="./js/jquery-3.2.1.min.js"></script>
+
+	<script type="text/javascript" src="./js/login.js"></script>
+
+	<script type="text/javascript" src="./js/layer.js"></script>
+
+	<script type="text/javascript" src="./js/menu.js"></script>
+	<script type="text/javascript" src="./js/view_topic.js"></script>
+
+</head>
+
+<body>
+
+     <header>
+          <nav class="navbar">
+               <div class="navbar-search"><i class="fa fa-user-circle"></i><div>
+                  <ul class="navlist" style="padding-top:50px ;">
+                  	<div id="" style="margin-bottom: 50px;">
+                  		<li class="headicon" ><img id='avatar' src="img/default_avatar.png" alt="some_text" style="width:90px;height:90px;border-radius: 3px;margin-bottom: 10px;"></li>  <!-- 头像在登录后由用户上传，默认为mao -->
+                        <div id="user_menu" style="text-align: center;">
+
+                         </div>
+                  	</div>
+
+
+
+                    <li class="navitem navlink active"><i class="fa fa-th-large"></i><a href="dashboard.html">Welcome</a></li>
+                    <li class="navitem navlink file"><i class="fa fa-folder"></i><a href="file_list.html">File</a></li>
+					<li class="navitem navlink topic"><i class="fa fa-file"></i><a href="topic_list.html">Topic</a></li>
+					<li class="navitem navlink"><i class="fa fa-power-off"></i><a href="log_out.php">Log out</a></li>
+                  </ul>
+          </nav>
+     </header>
+
+
+     <div id="discuss-topic" class="ds">
+         <div id="discuss-panel" class="panel panel-group" style="width: 90%;margin: auto;margin-top: 20px;">
+         	<div class="panel panel-success">
+         		<div id="topic-title" class="panel-heading" style="height: 20px;">
+
+         		</div>
+         		<div id="topic-txt" class="panel-body">
+
+         		</div>
+         		<div id="" class="panel-footer" style="text-align: right;">
+         			Add Time:<span id='topic-time'></span>
+         			Author:<span id='topic-author'></span>
+         		</div>
+
+
+
+         	</div>
+              
+
+         </div>
+         
+           <div class="panel panel-group form-group" style="width: 90%;margin: auto;margin-top: 20px;">
+    <label style="font: 'arial black';font-size: 20px;">Comment</label>
+    <textarea type="text" class="form-control" style="padding: 0px 0px;min-height: 80px;" id="comment-txt" placeholder="请输入名称"></textarea>
+  		<div id="" style="text-align: right;">
+  				<button style="margin-right: 0px; margin-top: 20px;" class="btn btn-info" onclick="add_comment()">Sumbit</button>
+  		</div>
+           </div>
+
+     </div>
+
+</body>
+
+</html>

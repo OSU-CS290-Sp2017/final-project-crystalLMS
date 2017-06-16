@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <meta charset="UTF-8">
+     <title>SignUp</title>
+     <!-- font format -->
+     <!-- CSS -->
+     <link href="css/bootstrap.min.css" rel="stylesheet">
+     <link rel="stylesheet" href="css/font-awesome.min.css" />
+	<link rel="stylesheet" href="css/signup.css" />		<script type="text/javascript" src="./js/jquery-3.2.1.min.js"></script>	<script type="text/javascript" src="./js/layer.js"></script>	<script type="text/javascript" src="./js/signup.js"></script>
+</head>
+
+<body>
+     <div id="" class="form-box">
+          <div class="form-box-inner">
+               <div class="form-title">
+                    <span style="font-size: 30px;font: perpetua;text-shadow: 0 1px 4px rgba(0,0,0,0.2);">New User Signup</span>
+               </div>
+               <form id="signup_form" action="" method="post" class="form-body">
+                    <input class="form-control form-input" name="usr" style="background:rgba(45,45,45,.15);height: 40px;box-shadow: 0 2px 3px 0 rgba(0,0,1,.1) inset;color: #FFFFFF;" placeholder="Choose your username" />
+                    <br>
+                    <input id='pwd' type="password" class="form-control form-input" name="pwd" style="background:rgba(45,45,45,.15);height: 40px;box-shadow: 0 2px 3px 0 rgba(0,0,1,.1) inset;color: #FFFFFF;" placeholder="Create a password" />
+                    <br>
+                    <input id='pwd2' type="password" class="form-control form-input" name="pwd2" style="background:rgba(45,45,45,.15);height: 40px;box-shadow: 0 2px 3px 0 rgba(0,0,1,.1) inset;color: #FFFFFF;" placeholder="Confirm your password" />
+                    <br>
+                    <div class="form-control form-input-photo" style="background:rgba(45,45,45,.15);height: 60px;box-shadow: 0 2px 3px 0 rgba(0,0,1,.1) inset;color: #FFFFFF;">
+                        <span class="upload-context">Upload your avatar here</span>
+                        <input type="file" class="upload" name="avatar"/>
+                    </div>
+                    <br>                     <a id='sign_sumbit' class="btn btn-success" style="width: 100%;height: 40px;font: arial;font-size: 20px;">Create New Account</a>
+               </form>
+               
+          </div>
+     </div>
+</body>
+</html>

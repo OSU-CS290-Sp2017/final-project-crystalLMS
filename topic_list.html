@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <meta charset="UTF-8">
+     <title>topic_list</title>
+     <!-- font format -->
+
+
+     <!-- CSS -->
+     <link href="css/bootstrap.min.css" rel="stylesheet">
+     <link rel="stylesheet" href="css/font-awesome.min.css" />
+	 <link href="css/topic_list.css" rel="stylesheet" >
+    <link href="css/style.css" rel="stylesheet" media="screen">
+    <script type="text/javascript" src="./js/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="./js/layer.js"></script>
+	<script type="text/javascript" src="./js/menu.js"></script>
+	<script type="text/javascript" src="./js/topic.js"></script>
+</head>
+<body>
+     <header>
+          <nav class="navbar">
+               <div class="navbar-search"><i class="fa fa-user-circle"></i><div>
+                  <ul class="navlist" style="padding-top:50px ;">
+                  	<div id="" style="margin-bottom: 50px;">
+                  		<li class="headicon" ><img id='avatar' src="img/default_avatar.png" alt="some_text" style="width:90px;height:90px;border-radius: 3px;margin-bottom: 10px;"></li>  <!-- 头像在登录后由用户上传，默认为mao -->
+                        <div id="user_menu" style="text-align: center;">
+                         	
+                         </div>
+                  	</div>
+				    
+				    
+                    
+                    <li class="navitem navlink active"><i class="fa fa-th-large"></i><a href="dashboard.html">Welcome</a></li>
+                    <li class="navitem navlink file"><i class="fa fa-folder"></i><a href="file_list.html">File</a></li>
+					<li class="navitem navlink topic"><i class="fa fa-file"></i><a href="topic_list.html">Topic</a></li>
+					<li class="navitem navlink"><i class="fa fa-power-off"></i><a href="log_out.php">Log out</a></li>
+                  </ul>
+          </nav>
+     </header>
+     <div id='main-div' class="main">
+     	<div id="topic-list" class="topic-list">
+
+     	</div>
+
+     </div>
+     
+	  <button type="button" id="c_topic" class="create-topic"><i class="fa fa-send"></i></button>
+
+     <div id="first-modal" style=""></div>
+    <div id="ctm" style="">
+
+     <div class="modal-dia" >
+
+     <div class= "modal-topic" >
+       <div class="modal-head">
+         <h3>Creat topic</h3>
+       </div>
+     </div>
+
+       <div class="modal-body" >
+         <div class="get-a-topic">
+           <label for="input-title">Title</label>
+           <input id="input-title"></input>
+         </div>
+
+          <div class="get-a-topic">
+            <label for="input-topic">Topic</label>
+            <textarea id="input-topic"></textarea>
+          </div>
+     </div>
+
+     <div class="modal-foot">
+         <button type="button" id="c_cancel" class="cb">Cancel</button>
+         <button type="button" id="c_sumbit" class="ab">Create topic</button>
+    </div>
+
+   </div>
+ </div >
+</body>
+</html>
